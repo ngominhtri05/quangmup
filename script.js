@@ -1,4 +1,4 @@
-const { Client } = require('discord.js-selfbot-v13');
+const { Client } = require('');
 const client = new Client({ checkUpdate: false });
 const fs = require('fs');
 
@@ -11,25 +11,25 @@ client.on('ready', () => {
 });
 i = 0;
 async function fuckyou() {
-    const channelID = '1102870817550905384';
+    const channelID = '110287';
     const channel = client.channels.cache.get(channelID);
     a = "a";
     if (channel) {
         while(true){
             if (i % 9 === 0) {
                 await sleep((Math.floor(Math.random() * 2)+1)*1000);
-                channel.send('owo');
-                console.log('owo');
+                channel.send('');
+                console.log('');
             }
             if (i % 12 === 0) {
                 await sleep((Math.floor(Math.random() * 2)+1)*1000);
-                channel.send('owoh');
+                channel.send('');
                 await sleep((Math.floor(Math.random() * 2)+1)*1000);
-                channel.send('owob');
-                console.log('hunt/battke');
+                channel.send('');
+                console.log('');
             }
             client.on('message', async (message) => {
-                if (message.channel.id === '1102870817550905384') {
+                if (message.channel.id === '987675476587698') {
                     await sleep(1000);
                     console.log(`channel: ${message.content}`);
                     await sleep(1000);
@@ -150,4 +150,4 @@ async function fuckyou() {
     }
 }
 
-client.login("OTk1NjExODU4MTk3Mjk5MjMz.GjxuiI.1jylRzlzdVLJH207DVNmkpWNPrAmcBuVl-W7Qk");
+client.login("OTk1N");
